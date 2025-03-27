@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Applied AI - Launching Unique AI Driven Products</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    /* Reset and Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f4f4f4;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    
+    /* Navigation */
+    nav {
+      background: #333;
+      color: #fff;
+      padding: 1rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    nav .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+    nav .nav-links a {
+      color: #fff;
+      margin-left: 1rem;
+      transition: color 0.3s;
+    }
+    nav .nav-links a:hover {
+      color: #ffd700;
+    }
+    
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      background: linear-gradient(135deg, #6b73ff, #000dff);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 20px;
+      margin-top: 60px; /* space for fixed nav */
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .hero .btn {
+      padding: 0.8rem 2rem;
+      background: #fff;
+      color: #333;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s, color 0.3s;
+    }
+    .hero .btn:hover {
+      background: #e0e0e0;
+    }
+    
+    /* Sections */
+    section {
+      padding: 4rem 20px;
+      margin: auto;
+    }
+    .about,
+    .projects,
+    .contact {
+      background: #fff;
+      margin-bottom: 2rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      max-width: 1200px;
+    }
+
+    .about {
+      margin-top: 2rem;
+    }
+
+    .about h2,
+    .projects h2,
+    .contact h2 {
+      margin-bottom: 1rem;
+      text-align: center;
+      color: #333;
+    }
+    .about p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    
+    /* Projects Section */
+    .projects .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-auto-rows: 1fr;
+      gap: 1rem;
+    }
+    .project-card {
+      background: #f9f9f9;
+      border-radius: 5px;
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.3s;
+      height: 100%;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+    .project-card h3 {
+      margin-bottom: 0.5rem;
+    }
+    
+    /* Contact Section */
+    .contact p {
+      font-size: 1rem;
+      text-align: center;
+    }
+    .contact a {
+      color: #000dff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    .contact a:hover {
+      color: #ffd700;
+    }
+    
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <div class="logo"><a href="#">Applied AI</a></div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <div>
+      <h1>Applied AI</h1>
+      <p>Creating useful AI driven tools today, to empower a human forward tomorrow.</p>
+      <button class="btn" onclick="document.querySelector('#about').scrollIntoView({ behavior: 'smooth' });">
+        Learn More
+      </button>
+    </div>
+  </section>
+  
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+      At Applied AI, we specialize in launching innovative AI driven products. As a budding company, we’re in the early stages of our journey, passionate about exploring the endless possibilities of artificial intelligence.
+    </p>
+    <p>
+      Our mission is to take creative ideas and transform them into impactful, real-world applications using cutting-edge AI technology.
+    </p>
+  </section>
+  
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Our Projects</h2>
+    <div class="project-grid">
+      <a href="https://github.com/AppliedAI-Org/AIPoweredSQLConverter" target="_blank" style="text-decoration: none; color: inherit;">
+        <div class="project-card">
+          <h3>NLSequel</h3>
+          <p>A simple API for converting natural language to SQL.</p>
+          <br>
+          <p>Launches 3/31/25</p>
+        </div>
+      </a>
+      <a href="https://github.com/Jacob-J-Thomas/IntelligenceHub?tab=readme-ov-file#the-intelligence-hub" target="_blank" style="text-decoration: none; color: inherit;">
+        <div class="project-card">
+          <h3>The Intelligence Hub API</h3>
+          <p>An open source API to manage, centralize, and provide interoperability between popular AI services.</p>
+          <br>
+          <p>Managed service coming soon!</p>
+        </div>
+      </a>
+      <a href="#" style="text-decoration: none; color: inherit;">
+        <div class="project-card">
+          <h3>To Be Announced</h3>
+          <p>Check back soon for the next exciting release.</p>
+        </div>
+      </a>
+    </div>
+</section>
+
+  
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>
+      If you have any questions or need to report an issue, please explore our
+      <a href="https://github.com/AppliedAI-Org" target="_blank">GitHub page</a> or send us an email at
+      <a href="mailto:applied.ai.help@gmail.com">applied.ai.help@gmail.com</a>.
+    </p>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Applied AI. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
