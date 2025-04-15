@@ -57,6 +57,11 @@
     nav .nav-links a:hover {
       color: #ffd700;
     }
+
+    nav .logo img {
+      height: 40px; /* Adjust as needed */
+      vertical-align: middle;
+    }
     
     /* Hero Section */
     .hero {
@@ -90,6 +95,11 @@
     }
     .hero .btn:hover {
       background: #e0e0e0;
+    }
+
+    .hero img {
+      height: 80px;
+      margin-bottom: -1.25rem;
     }
     
     /* Sections */
@@ -183,7 +193,12 @@
   <!-- Navigation -->
   <nav>
     <div class="container">
-      <div class="logo"><a href="#">Applied AI</a></div>
+      <div class="logo">
+        <a href="index.html">
+            Applied AI
+          <img src="logo.png" alt="Applied AI Logo">
+        </a>
+      </div>
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -197,7 +212,7 @@
   <!-- Hero Section -->
   <section class="hero">
     <div>
-      <h1>Applied AI</h1>
+      <h1>Applied AI <img src="logo.png" alt="Applied AI Logo"></img></h1>
       <p>Creating useful AI driven tools today, to empower a human forward tomorrow.</p>
       <button class="btn" onclick="document.querySelector('#about').scrollIntoView({ behavior: 'smooth' });">
         Learn More
@@ -249,7 +264,7 @@
     <p>
       If you have any questions or need to report an issue, please explore our
       <a href="https://github.com/AppliedAI-Org" target="_blank">GitHub page</a> or send us an email at
-      <a href="mailto:applied.ai.help@gmail.com">applied.ai.help@gmail.com</a>.
+      <a href="mailto:applied.ai@applied-ai-org.com">applied.ai@applied-ai-org.com</a>.
     </p>
   </section>
   

@@ -58,6 +58,12 @@
       color: #ffd700;
     }
     
+    /* Added styling for the logo image */
+    nav .logo img {
+      height: 40px; /* Adjust as needed */
+      vertical-align: middle;
+    }
+    
     section {
       scroll-margin-top: 60px;
       padding: 4rem 20px;
@@ -81,6 +87,15 @@
       margin-bottom: 1rem;
       text-align: center;
     }
+    /* New style to align paragraphs following h3 elements to the left */
+    section.privacy h3 + p {
+      text-align: left;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
     ul {
       list-style: disc;
       padding-left: 20px;
@@ -107,7 +122,12 @@
   <!-- Navigation -->
   <nav>
     <div class="container">
-      <div class="logo"><a href="index.html">Applied AI</a></div>
+      <div class="logo">
+        <a href="index.html">
+            Applied AI
+          <img src="logo.png" alt="Applied AI Logo">
+        </a>
+      </div>
       <div class="nav-links">
         <!-- Link back to the main page -->
         <a href="index.html">Home</a>
@@ -117,12 +137,13 @@
   
   <!-- Privacy Policy Section -->
   <section class="privacy">
-    <h2>Privacy Policy</h2>
+    <h1>Privacy Policy</h1>
     <p><strong>Effective Date:</strong> April 14, 2025</p>
     <p>
       Applied AI ("we", "us", or "our") is committed to protecting your privacy. This Privacy Policy describes how we collect, use, and safeguard your information across all of our applications, including but not limited to IntelliPromptly, IntelligenceHub, and related services (collectively, the "Services"). By using our Services, you agree to the terms of this Privacy Policy.
     </p>
-    <p><strong>1. Information We Collect</strong></p>
+    <br>
+    <h3><strong>1. Information We Collect</strong></h3>
     <p>
       We collect minimal information necessary to operate and improve our Services, including:
     </p>
@@ -132,10 +153,12 @@
       <li><strong>Third-Party Payment Information</strong>: Payment processing is handled securely by Stripe. We do not collect or store payment information directly.</li>
       <li><strong>Service-Specific Data</strong>: Certain Services, such as IntelligenceHub, allow users to store conversational or application data. This data is stored in <strong>user-owned resources</strong> (e.g., Azure SQL databases) and is not accessed or collected by us.</li>
     </ul>
+    <br>
     <p>
       We do <strong>not</strong> intentionally collect sensitive personal information such as names, mailing addresses, government IDs, or payment card numbers directly through our systems.
     </p>
-    <p><strong>2. How We Use Your Information</strong></p>
+    <br>
+    <h3><strong>2. How We Use Your Information</strong></h3>
     <p>
       We use the information we collect to:
     </p>
@@ -145,10 +168,12 @@
       <li>Ensure security and prevent abuse</li>
       <li>Analyze aggregated, anonymized data for service improvement</li>
     </ul>
+    <br>
     <p>
       We do not sell, rent, or share your personal data with third parties for marketing purposes.
     </p>
-    <p><strong>3. Third-Party Services</strong></p>
+    <br>
+    <h3><strong>3. Third-Party Services</strong></h3>
     <p>
       We rely on third-party providers to support our Services:
     </p>
@@ -158,19 +183,23 @@
       <li><strong>Stripe</strong> for secure payment processing</li>
       <li><strong>Other integrated APIs and cloud providers</strong> necessary to deliver specific features</li>
     </ul>
+    <br>
     <p>
       These third parties are governed by their own privacy policies and data practices.
     </p>
-    <p><strong>4. Data Storage and Security</strong></p>
+    <br>
+    <h3><strong>4. Data Storage and Security</strong></h3>
     <p>
       We implement appropriate technical and organizational measures to protect your information against unauthorized access, alteration, disclosure, or destruction.
       User-specific data that is part of user-owned resources (e.g., conversational logs stored in your own SQL databases) remains under your control.
     </p>
-    <p><strong>5. Data Retention</strong></p>
+    <br>
+    <h3><strong>5. Data Retention</strong></h3>
     <p>
       We retain usage and authentication data only as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law.
     </p>
-    <p><strong>6. User Rights</strong></p>
+    <br>
+    <h3><strong>6. User Rights</strong></h3>
     <p>
       You have the right to:
     </p>
@@ -179,20 +208,19 @@
       <li>Request correction or deletion of your personal data</li>
       <li>Object to or restrict certain types of data processing</li>
     </ul>
+    <br>
     <p>
       To make a request, please contact us at <a href="mailto:applied.ai@applied-ai-org.com">applied.ai@applied-ai-org.com</a>. We will respond to requests within a reasonable timeframe.
     </p>
-    <p><strong>7. Changes to This Privacy Policy</strong></p>
+    <br>
+    <h3><strong>7. Changes to This Privacy Policy</strong></h3>
     <p>
       We may update this Privacy Policy from time to time. Changes will be posted on this page, and the "Effective Date" at the top will be updated accordingly. Your continued use of our Services after any changes constitutes acceptance of the updated Privacy Policy.
     </p>
-    <p><strong>8. Contact Us</strong></p>
+    <br>
+    <h3><strong>8. Contact Us</strong></h3>
     <p>
-      If you have any questions, concerns, or requests regarding this Privacy Policy, you can contact us at:
-    </p>
-    <p style="text-align: center;">
-      <strong>Applied AI</strong><br />
-      Email: <a href="mailto:applied.ai@applied-ai-org.com">applied.ai@applied-ai-org.com</a>
+      If you have any questions, concerns, or requests regarding this Privacy Policy, you can contact us at: <a href="mailto:applied.ai@applied-ai-org.com">applied.ai@applied-ai-org.com</a>
     </p>
   </section>
   
