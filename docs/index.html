@@ -19,7 +19,7 @@
       box-sizing: border-box;
     }
     html {
-      scroll-padding-top: 60px; /* adjust this to match your nav height */
+      scroll-padding-top: 60px;
     }
     body {
       font-family: 'Roboto', sans-serif;
@@ -55,11 +55,10 @@
       transition: color 0.3s;
     }
     nav .nav-links a:hover {
-      color: #ffd700;
+      color: #6b73ff;
     }
-
     nav .logo img {
-      height: 40px; /* Adjust as needed */
+      height: 60px;
       vertical-align: middle;
     }
     
@@ -73,7 +72,7 @@
       justify-content: center;
       text-align: center;
       padding: 0 20px;
-      margin-top: 60px; /* space for fixed nav */
+      margin-top: 60px;
     }
     .hero h1 {
       font-size: 3rem;
@@ -96,9 +95,8 @@
     .hero .btn:hover {
       background: #e0e0e0;
     }
-
     .hero img {
-      height: 80px;
+      height: 480px;
       margin-bottom: -1.25rem;
     }
     
@@ -155,6 +153,34 @@
     .project-card h3 {
       margin-bottom: 0.5rem;
     }
+
+    /* Styled Project Links */
+    .project-link {
+      display: inline-block;
+      color: #000dff;
+      font-weight: bold;
+      position: relative;
+      transition: color 0.3s;
+    }
+    .project-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 2px;
+      background-color: #000dff;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.3s ease-out;
+    }
+    .project-link:hover {
+      color: darkblue;
+    }
+    .project-link:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
     
     /* Contact Section */
     .contact p {
@@ -167,7 +193,7 @@
       transition: color 0.3s;
     }
     .contact a:hover {
-      color: #ffd700;
+      color: darkblue;
     }
     
     /* Footer */
@@ -195,15 +221,13 @@
     <div class="container">
       <div class="logo">
         <a href="index.html">
-            Applied AI
-          <img src="logo.png" alt="Applied AI Logo">
+          <img src="logo.png" alt="Applied AI Logo">| Applied AI
         </a>
       </div>
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
-        <!-- Link to separate privacy page -->
         <a href="privacy.html">Privacy</a>
       </div>
     </div>
@@ -212,7 +236,8 @@
   <!-- Hero Section -->
   <section class="hero">
     <div>
-      <h1>Applied AI <img src="logo.png" alt="Applied AI Logo"></img></h1>
+      <img src="logo.png" alt="Applied AI Logo">
+      <h1>Applied AI </h1>
       <p>Creating useful AI driven tools today, to empower a human forward tomorrow.</p>
       <button class="btn" onclick="document.querySelector('#about').scrollIntoView({ behavior: 'smooth' });">
         Learn More
@@ -235,26 +260,24 @@
   <section id="projects" class="projects">
     <h2>Our Projects</h2>
     <div class="project-grid">
-      <a href="https://nlsequel.azurewebsites.net/home" target="_blank" style="text-decoration: none; color: inherit;">
-        <div class="project-card">
-          <h3>NLSequel</h3>
-          <p>A simple API for converting natural language to SQL.</p>
-        </div>
-      </a>
-      <a href="https://github.com/Jacob-J-Thomas/IntelligenceHub?tab=readme-ov-file#the-intelligence-hub" target="_blank" style="text-decoration: none; color: inherit;">
-        <div class="project-card">
-          <h3>The Intelligence Hub API</h3>
-          <p>An open source API to manage, centralize, and provide interoperability between popular AI services.</p>
-          <br>
-          <p>Managed service coming soon!</p>
-        </div>
-      </a>
-      <a href="#" style="text-decoration: none; color: inherit;">
-        <div class="project-card">
-          <h3>To Be Announced</h3>
-          <p>Check back soon for the next exciting release.</p>
-        </div>
-      </a>
+      <div class="project-card">
+        <h3>NLSequel</h3>
+        <p>A simple API for converting natural language to SQL.</p>
+        <br/>
+        <a href="https://nlsequel.azurewebsites.net/" target="_blank" class="project-link">Visit NLSequel</a>
+      </div>
+      <div class="project-card">
+        <h3>The Intelligence Hub API</h3>
+        <p>An open source API to manage, centralize, and provide interoperability between popular AI services.</p>
+        <br/>
+        <a href="https://theintelligencehub.azurewebsites.net/home" class="project-link">Use the Managed Service</a>
+        <br/><br/>
+        <a href="https://github.com/AppliedAI-Org/IntelligenceHub" class="project-link">View Open Source Project</a>
+      </div>
+      <div class="project-card">
+        <h3>To Be Announced</h3>
+        <p>Check back soon for the next exciting release.</p>
+      </div>
     </div>
   </section>
 
@@ -264,7 +287,7 @@
     <p>
       If you have any questions or need to report an issue, please explore our
       <a href="https://github.com/AppliedAI-Org" target="_blank">GitHub page</a> or send us an email at
-      <a href="mailto:jacob.thomas@applied-ai-org.com">jacob.thomas@applied-ai-org.com</a>.
+      <a href="mailto:applied.ai.help@gmail.com">applied.ai.help@gmail.com</a>.
     </p>
   </section>
   
